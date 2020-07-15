@@ -1,0 +1,73 @@
+# This is source file for /opt/yadbash/powerball/sparkypowerball.sh
+# Purpose: Generate Powerball Numbers to pb-numbers-txt to then be read to varialbe for
+# production of balls in icon display.
+
+
+# Remove Previous Temp Work Files
+rm $tempDir/numbers.txt
+rm $tempDir/numbers-fold.txt
+rm $tempDir/pb-numbers.txt
+
+if [ ! -d "/opt/yadbash/powerball/temp/print.txt" ]; then
+  touch /opt/yadbash/powerball/temp/print.txt
+fi
+
+export pbNumFile=/opt/yadbash/powerball/temp/pb-numbers.txt
+export tempDir=/opt/yadbash/powerball/temp
+export numbersDir=/opt/yadbash/powerball/icons/numbers
+export keyNumFile=/opt/yadbash/powerball/temp/keynumber.txt
+export iconsDir=/opt/yadbash/powerball/icons
+
+
+# Generate Powerball First 5 numbers - one number per line sorted numerically - create work files listed above
+
+keyNum=$(sed -n 1p < $keyNumFile)
+i=$keyNum
+N=1
+myNumbers=$(for ((i = 1; i <= N; i++)); do echo "$(seq -w 69 |sort -R |head -5 |sort -n)"; done)
+touch $tempDir/numbers.txt
+echo $myNumbers > $tempDir/numbers.txt
+
+# Wrap lines to deal with spaces between numbers (Need to remove spaces from list instead of this hack)
+fold -w 2 -s $tempDir/numbers.txt > $tempDir/numbers-fold.txt
+
+# Generate the Power Ball (6th Ball) 
+myPBnumbers=$(for ((i = 1; i <= N; i++)); do echo "$(seq -w 26 |sort -R |head -1 |sort -n)"; done) 
+
+# Add Power Ball (6th ball) to 5 powerball numbers
+echo $myPBnumbers >> $tempDir/numbers-fold.txt
+
+# Add all Powerball Numbers + PowerBall Number on single line to Current (print) file
+echo $myNumbers+$myPBnumbers >> $tempDir/print.txt
+
+# Copy final power numbers (1 per line)
+cp $tempDir/numbers-fold.txt $tempDir/pb-numbers.txt
+
+
+# ====================================================
+# Now read correct pbnumbers to pick correct balls ===
+# ====================================================
+
+
+Num1=$(sed -n 1p < $pbNumFile)
+Num2=$(sed -n 3p < $pbNumFile)
+Num3=$(sed -n 5p < $pbNumFile)
+Num4=$(sed -n 7p < $pbNumFile)
+Num5=$(sed -n 9p < $pbNumFile)
+pbNum=$(sed -n 10p < $pbNumFile)
+
+# ====================================================
+# Now copy correct balls to icon display window ======
+# ====================================================
+sleep 2
+	cp $numbersDir/$Num1.desktop $iconHoldDir
+	cp $numbersDir/$Num2.desktop $iconHoldDir
+	cp $numbersDir/$Num3.desktop $iconHoldDir
+	cp $numbersDir/$Num4.desktop $iconHoldDir
+	cp $numbersDir/$Num5.desktop $iconHoldDir
+	cp $numbersDir/pb$pbNum.desktop $iconHoldDir
+sleep 1
+	cp $iconHoldDir/*.desktop /opt/yadbash/powerball/icons/display/
+sleep 1
+	rm $iconHoldDir/*.desktop >> null
+

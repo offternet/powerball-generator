@@ -1,0 +1,41 @@
+# THIS IS A SOURCE FILE for larger information display window
+
+# LOCATION /opt/yadbash/powerball/source/info_yadbash.source
+
+fkey=$(($RANDOM * $$))
+
+filename="/opt/yadbash/powerball/list/about-yadbash.list"
+imageDir="/opt/yadbash/powerball/images/"
+
+yad \
+	--plug="$fkey" \
+	--tabnum=1  \
+	--image="$imageDir/sparky-powerball-banner.png" &
+
+yad \
+	--plug="$fkey" \
+	--tabnum=2 \
+	--text-info \
+	--expand-column=1  \
+	--column="Name" \
+	--expand-column=1 \
+	--image="$imageDir/yadbash-logo.jpg" \
+	--filename="$filename"   &
+
+yad \
+	--paned \
+	--key="$fkey" \
+	--undecorated \
+	--on-top \
+	--center \
+	--width=800 \
+	--height=350 \
+	--button="Close":1
+
+	ret=$?
+	[[ $ret -eq 1 ]] && exit
+
+	exit
+
+
+# END 
