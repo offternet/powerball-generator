@@ -21,8 +21,7 @@ Files are copied to /opt/yadbash/powerball/  & Owner is: the-user-name - NOT roo
         /opt/yadbash/powerball/sparkypowerball.sh
     
 
-Must be using Linux GNU with Yad Gui 0.40+ with Gtk-2.0+ desktop environment
-nvironment.
+Must be using Linux GNU with Yad Gui 0.40+ with Gtk-2.0+ desktop environment.
 
 A 2nd copy of yad name yad2 must be duplicated in /usr/bin 
 
