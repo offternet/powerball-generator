@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=31
+GenericName=31
+Exec=
+Icon=/opt/yadbash/powerball/images/balls/31.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+

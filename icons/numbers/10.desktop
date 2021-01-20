@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=10
+GenericName=10
+Exec=
+Icon=/opt/yadbash/powerball/images/balls/10.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+

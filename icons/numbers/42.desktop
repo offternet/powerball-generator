@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=42
+GenericName=42
+Exec=
+Icon=/opt/yadbash/powerball/images/balls/42.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+

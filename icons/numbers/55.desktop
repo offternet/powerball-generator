@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=55
+GenericName=55
+Exec=
+Icon=/opt/yadbash/powerball/images/balls/55.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+
