@@ -1,4 +1,8 @@
 # sparkyos-powerball
+Updated: Uploaded Missing Number Files (My Apologies)
+
+Dependencies: Requires YAD GUI 0.39+
+
 Powrball Generator using Yad Gui &amp; Bash.  Any Gtk-2.0+ Linux System with Yad Gui 0.40+
 
 Files are copied to /opt/yadbash/powerball/  & Owner is: the-user-name - NOT root user.
@@ -29,8 +33,8 @@ A 2nd copy of yad name yad2 must be duplicated in /usr/bin
     sudo cp yad /usr/bin/yad2
 
 
-Built on SparkyLinux 4 (Debian Stretch) Openbox File Manager. Tested on SparkyLinux 5 (Debian Buster) too.
+Tested on Debian 10 Buster Desktop Openbox File Manager. 
 
-Todo: Build yad installer to fully automate install - run on user computer.
+
 
 
