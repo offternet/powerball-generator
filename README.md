@@ -1,11 +1,11 @@
 # sparkyos-powerball
 Updated: Uploaded Missing Number Files (My Apologies)
 
-Dependencies: Requires YAD GUI 0.39+
+Dependencies: Requires YAD GUI 0.40+
 
 Powrball Generator using Yad Gui &amp; Bash.  Any Gtk-2.0+ Linux System with Yad Gui 0.40+
 
-Files are copied to /opt/yadbash/powerball/  & Owner is: the-user-name - NOT root user.
+Files are copied to /opt/yadbash/powerball/  & chown owner:group - NOT root user.
 
     Download sparkyos-powerball
         unzip sparky-powerball-master.zip to directory
