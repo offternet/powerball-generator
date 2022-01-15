@@ -39,3 +39,8 @@ Tested on Debian 10 Buster Desktop Openbox File Manager.
 Screenshots:
 
 ![sparky-powerball01](https://user-images.githubusercontent.com/68208919/149611198-1972649b-d6f1-4bfb-9a0d-de058b526589.png)
+![sparky-powerball02](https://user-images.githubusercontent.com/68208919/149611256-21fe21f2-b287-49ae-8302-775348c1c6c6.png)
+![sparky-powerball03](https://user-images.githubusercontent.com/68208919/149611271-89441f40-8528-4cf7-b8f1-06523390e94a.png)
+![sparky-powerball04](https://user-images.githubusercontent.com/68208919/149611282-bcf39a8c-6210-4a53-bace-bb51a67dbab4.png)
+![sparky-powerball05](https://user-images.githubusercontent.com/68208919/149611288-738db17c-2724-4ce4-8f13-afe433160e6d.png)
+
