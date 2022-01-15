@@ -1,0 +1,11 @@
+# Source file for /home/yadbash/powerball/sparkypowerball.sh
+
+tempDir="/opt/yadbash/powerball/temp"
+TEXT="Customize your SparkyPB Numbers. \n Adjust number.  Max 65525"
+curKeyNum=$(sed -n 1p < $tempDir/keynumber.txt)
+
+keynumber=$(yad --form --separator="\n" --field="Current Key Number":NUM "$curKeyNum" --undecorated \
+--text="$TEXT" --on-top --center --width=400 --height=150 --button="Cancel":1 --button="Save":0) &&
+echo $keynumber > $tempDir/keynumber.txt
+
+
