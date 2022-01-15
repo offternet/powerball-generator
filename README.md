@@ -38,6 +38,5 @@ Tested on Debian 10 Buster Desktop Openbox File Manager.
 ----------------------
 Screenshots:
 
-
-![alt text](https://github.com/offternet/powerball-generator)
+https://github.com/offternet/powerball-generator/blob/master/screenshots/sparky-powerball01.png?raw=true
 
