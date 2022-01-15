@@ -31,7 +31,7 @@ cd $mainDir/icons/reset
 	cp reset.desktop $iconsDir/display
 
 enter_keyNumber() {
-. /$sourceDir/enter-keynumber.souce
+. /$sourceDir/enter-keynumber.source
 }
 export -f enter_keyNumber
 
