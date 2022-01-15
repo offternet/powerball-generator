@@ -35,6 +35,9 @@ A 2nd copy of yad name yad2 must be duplicated in /usr/bin
 
 Tested on Debian 10 Buster Desktop Openbox File Manager. 
 
+----------------------
+Screenshots:
 
+https://github.com/offternet/powerball-generator
 
 
