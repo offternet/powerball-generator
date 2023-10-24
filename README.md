@@ -1,5 +1,7 @@
 # sparkyos-powerball
 
+https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png
+
 https://www.youtube.com/watch?v=IVgLfWJEB9M
 
 **IMPORTANT !!!!!    Do NOT USE Individual uploaded files at this time as 2018 files are located in /opt/yadbash/powerball and for 2023 the new location is /home/yadbash/powerball.**
