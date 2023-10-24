@@ -1,6 +1,6 @@
 # sparkyos-powerball
 
-https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png
+<img src="https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png">
 
 https://www.youtube.com/watch?v=IVgLfWJEB9M
 
