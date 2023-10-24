@@ -1,5 +1,7 @@
 # sparkyos-powerball
 
+https://www.youtube.com/watch?v=IVgLfWJEB9M
+
 **IMPORTANT !!!!!    Do NOT USE Individual uploaded files at this time as 2018 files are located in /opt/yadbash/powerball and for 2023 the new location is /home/yadbash/powerball.**
 
 **Updated:** Oct 23, 2023 new sparky-pb-correct-home-path-gif-spin-working.zip file has new location /home/yadbash/powerball
