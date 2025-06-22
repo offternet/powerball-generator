@@ -1,4 +1,4 @@
-# sparkyos-powerball
+# SparkPB - Powerball (tm) Number Generator**
 
 <img src="https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png"> <img src="https://github.com/offternet/powerball-generator/blob/master/sparky-pb-300banner.png">
 
@@ -75,3 +75,5 @@ Screenshots:
 ![sparky-powerball04](https://user-images.githubusercontent.com/68208919/149611282-bcf39a8c-6210-4a53-bace-bb51a67dbab4.png)
 ![sparky-powerball05](https://user-images.githubusercontent.com/68208919/149611288-738db17c-2724-4ce4-8f13-afe433160e6d.png)
 
+** Powberball is a trademark of Powerball Corporation and NOT owned by Robert Cooper. 
+** SparkyPB is only for entertainment purposes and will NOT increase your changes of winning a Jackpot but if you do, 1% for use would be a kind jesture of apprecation.
