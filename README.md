@@ -4,31 +4,39 @@
 
 **Updated New Code:** June 22, 2025
 
-**IMPORTANT !!!!!** The 2025 version now uses new program directory: /home/yadbash/sparkypb. 
-                    Also required is a duplicate copy of yad named yad2 is required. (see instrutions below)
+**IMPORTANT !!!!!** The 2025 version now uses new program directory: /home/yadbash/sparkypb/ 
+                    Requires yad 10.x - 14.x (lower versions may work but, untested).
+                    2 files need executable set: /home/yadbash/sparkypb.sh | /home/yadbash/sparkypb/sources/spin-sparkypb.sh
+                    Requires a duplicate copy /usr/local/bin/yad named --> /usr/local/bin/yad2 (see instrutions below)
 
+**DOWNLOAD & INSTALL**
 1. Download zip file (program code and images)
 2. Create directory: /home/yadbash
 3. Set /home/yadbash to user permissions:
-4. Open Terminal | <code>cd /home</code> | <code>sudo chown user:user ./sparkypb</code>
+4. Open Terminal | <code>cd /home</code> | <code>sudo chown -R user:user ./sparkypb</code>
 5. Extract files to /home/yadbash/sparkypb (extracted directory must be renamed to /home/yadbash/sparkypb ---- if needed)
 6. <code>cde /home/yadbash/sparkypb</code> | sudo chmod +x ./sparkypb.sh (Makes file executable)
 7. Execute SparkyPB:
      From /home/yadbash/sparkypb directory: <code>./sparkypb.sh</code>
      From any directory: /home/yadbash/sparkypb/sparkypb.sh
    
-**Dependencies:**   Requires YAD GUI 1.0+ (recommended)
+**Dependencies:**   Requires YAD GUI 10.x+ 
                     Requires Gtk-3.x environment on a GNU Linux system. 
                     Sparkypb uses yad --paned option which is not in version: 0.40.0
-                    You will have to compile yad if version 1.0+ is installed 
-                    See instructions here: https://yadbash.com/pages/view/57/source-install
-
+                    You will have to compile yad on your system if 10.x is not already installed
+                    Yad Compile instructions are here: https://yadbash.com/pages/view/57/source-install
     
 **Important !!!  Special Duplicate 2nd copy of yad requied:** 
 
 1. For version 10-14.x: Open terminal: <code>sudo cp /usr/local/bin/yad /usr/local/bin/yad2
 2. For Version 0.40.x: <code>sudo cp /usr/bin/yad /usr/bin/yad2
 
+**Make these 2 files executable**
+1. cd /home/yadbash/sparkypb/
+2. Open Terminal:
+3. <code>sudo chmod +x ./sparkypb.sh</code>
+4. cd /home/yadbash/sparkypb/sources/
+5. <code>sudo chmod +x ./spin-sparkypb.sh</code>
 
 Tested on Debian 11, Debian 11, and Debian 12 Bookworm. Should work on all Destkops as long as yad 10.x - 14.x will work.
 
