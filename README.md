@@ -9,7 +9,16 @@
                     2 files need executable set: /home/yadbash/sparkypb.sh | /home/yadbash/sparkypb/sources/spin-sparkypb.sh
                     Requires a duplicate copy /usr/local/bin/yad named --> /usr/local/bin/yad2 (see instrutions below)
 
-**DOWNLOAD & INSTALL**
+**Errors** 
+A couple errors display in terminal but, do Not effect program function. 
+
+  <code>image replaced display folder "Unable to parse file /xxxx/*.xxx No such file or directory"</cod>
+  
+  <code>GTK error in every yad script: "Overriding existing handler for signal 10. Set JSC_SIGNAL_FOR_GC</code>
+
+If you get a "unable parse --plug error" after several runs, plesae close terminal and launch SparkyPB again to get a new Random Number for the Generator code.
+
+DOWNLOAD & INSTALL
 1. Download zip file (program code and images)
 2. Create directory: /home/yadbash
 3. Set /home/yadbash to user permissions:
@@ -20,11 +29,11 @@
      From /home/yadbash/sparkypb directory: <code>./sparkypb.sh</code>
      From any directory: /home/yadbash/sparkypb/sparkypb.sh
 
-**Important -  Special Duplicate 2nd copy of yad requied:** 
+Important -  Special Duplicate 2nd copy of yad requied:
   For version 10-14.x: Open terminal: <code>sudo cp /usr/local/bin/yad /usr/local/bin/yad2</code> 
   For Version 0.40.x: <code>sudo cp /usr/bin/yad /usr/bin/yad2</code>
 
-**Make these 2 files executable**
+Make these 2 files executable:
 1. cd /home/yadbash/sparkypb/
 2. Open Terminal:
 3. <code>sudo chmod +x ./sparkypb.sh</code>
