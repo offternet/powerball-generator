@@ -4,9 +4,9 @@
 
 https://www.youtube.com/watch?v=IVgLfWJEB9M
 
-**IMPORTANT !!!!!    Do NOT USE Individual uploaded files at this time as 2018 files are located in /opt/yadbash/powerball and for 2023 the new location is /home/yadbash/powerball.**
+**IMPORTANT !!!!!    Do NOT USE Individual uploaded files at this time as 2018 files are located in /opt/yadbash/sparkypb and for 2023 the new location is /home/yadbash/sparkypb.**
 
-**Updated:** Oct 23, 2023 new sparky-pb-correct-home-path-gif-spin-working.zip file has new location /home/yadbash/powerball
+**Updated:** Oct 23, 2023 new sparky-pb-correct-home-path-gif-spin-working.zip file has new location /home/yadbash/sparkypb
 
 **Dependencies:** Requires YAD GUI 1.0+ and requires Gtk-3.0+ environment on a GNU Linux system. 
 
@@ -29,7 +29,7 @@ Powrball Generator using Yad Gui and Bash.  Any Gtk-3.0+ Linux System with Yad G
 
    https://github.com/offternet/powerball-generator/blob/master/sparky-pb-correct-home-path-gif-spin-working.zip
 
-2. Use <code>sudo mkdir /home/yadbash/powerball</code>
+2. Use <code>sudo mkdir /home/yadbash/sparkypb</code>
 
 3. <code>cd /home</code>
 
@@ -37,23 +37,23 @@ Powrball Generator using Yad Gui and Bash.  Any Gtk-3.0+ Linux System with Yad G
 
 5. <code>cd /home/yadbash</code>
 
-6. <code>sudo chow -R user:group ./powerball</code>
+6. <code>sudo chow -R user:group ./sparkypb</code>
 
-7. <code>unzip ./sparky-pb-correct-home-path-gif-spin-working.zip /home/yadbash/powerball</code>
+7. <code>unzip ./sparky-pb-correct-home-path-gif-spin-working.zip /home/yadbash/sparkypb</code>
 
-8. cd /home/yadbash/powerball
+8. cd /home/yadbash/sparkypb
 
-9. ls -l  (verify sparkypowwerball.sh is set as execute file. if not: this is a problem. There are several *.sh files that must be executable.
+9. ls -l  (verify sparkysparkypb.sh is set as execute file. if not: this is a problem. There are several *.sh files that must be executable.
 
-10. Files are copied to /opt/yadbash/powerball/  & chown owner:group - NOT root user.
+10. Files are copied to /opt/yadbash/sparkypb/  & chown owner:group - NOT root user.
 
-11. <code>cd /home/yadbash/powerball</code>
+11. <code>cd /home/yadbash/sparkypb</code>
 
-12. (Execute Sparky Powerball) <code>./sparkypowerball.sh</code>
+12. (Execute Sparky Powerball) <code>./sparkypb.sh</code>
     
         or
         
-        /home/yadbash/powerball/sparkypowerball.sh
+        /home/yadbash/powerball/sparkypb.sh
     
 
 **Important** - Must be using Linux GNU with Yad Gui 1.0+ with Gtk-3.0+ desktop environment.
@@ -64,7 +64,7 @@ Powrball Generator using Yad Gui and Bash.  Any Gtk-3.0+ Linux System with Yad G
     sudo cp yad /usr/bin/yad2
 
 
-Tested on Debian 10 Buster, Debian 11 Bullseye and Debian 12 Bookworm. Should work on all Destkops.
+Tested on Debian 11, Debian 11, and Debian 12 Bookworm. Should work on all Destkops as long as yad 10.x - 14.x will work.
 
 ----------------------
 Screenshots:
