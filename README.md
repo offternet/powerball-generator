@@ -43,5 +43,7 @@ Tested on Debian 11, Debian 11, and Debian 12 Bookworm. Should work on all Destk
 ----------------------
 Screenshots:
 
+![Alt text](https://github.com/offternet/SparkyPB-Powerball-Numbers-Generator/blob/master/screenshots/sparkypb01.png)
+
 ** Powberball is a trademark of the Powerball Corporation and NOT owned by Robert Cooper. 
 ** SparkyPB is only for entertainment purposes and will NOT increase your changes of winning a Jackpot but if you do, 1% to Robert would be a kind jesture of your apprecation.
