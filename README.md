@@ -1,4 +1,4 @@
-# SparkPB - Powerball (tm) Number Generator**
+# SparkyPB - Powerball (tm) Number Generator**
 
 <img src="https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png"> <img src="https://github.com/offternet/powerball-generator/blob/master/sparky-pb-300banner.png">
 
