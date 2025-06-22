@@ -1,23 +1,36 @@
-# This is source file for /opt/yadbash/powerball/sparkypowerball.sh
-# Purpose: Generate Powerball Numbers to pb-numbers-txt to then be read to varialbe for
+# This is source file for /home/yadbash/sparkypb/sparkypb.sh
+# Purpose: Generate Powerball (tm)** Numbers to pb-numbers-txt to then be read to varialbe for
 # production of balls in icon display.
+# ** Powberball is a trademark of Powerball Corporation and NOT owned by Robert Cooper.
+# ** SparkyPB is only for entertainment purposes and will NOT increase your changes of winning a Jackpot but if you do, 1% for use would be a kind jesture of apprecation.
 
+unset pbNumFile
+sleep 1
+unset numbersDir
+sleep 1
+unset tempDir
+sleep 1
+unset pb-numbers
+sleep 1
+
+export tempDir=/home/yadbash/sparkypb/temp
 
 # Remove Previous Temp Work Files
 rm $tempDir/numbers.txt
 rm $tempDir/numbers-fold.txt
 rm $tempDir/pb-numbers.txt
 
-if [ ! -d "/opt/yadbash/powerball/temp/print.txt" ]; then
-  touch /opt/yadbash/powerball/temp/print.txt
+sleep 2
+
+export pbNumFile=/home/yadbash/sparkypb/temp/pb-numbers.txt
+export numbersDir=/home/yadbash/sparkypb/icons/numbers
+export keyNumFile=/home/yadbash/sparkypb/temp/keynumber.txt
+export iconsDir=/home/yadbash/sparkypb/icons
+
+
+if [ ! -d "/home/yadbash/sparkypb/temp/SparkyPB-Numbers.txt" ]; then
+  touch /home/yadbash/sparkypb/temp/SparkyPB-Numbers.txt
 fi
-
-export pbNumFile=/opt/yadbash/powerball/temp/pb-numbers.txt
-export tempDir=/opt/yadbash/powerball/temp
-export numbersDir=/opt/yadbash/powerball/icons/numbers
-export keyNumFile=/opt/yadbash/powerball/temp/keynumber.txt
-export iconsDir=/opt/yadbash/powerball/icons
-
 
 # Generate Powerball First 5 numbers - one number per line sorted numerically - create work files listed above
 
@@ -34,11 +47,11 @@ fold -w 2 -s $tempDir/numbers.txt > $tempDir/numbers-fold.txt
 # Generate the Power Ball (6th Ball) 
 myPBnumbers=$(for ((i = 1; i <= N; i++)); do echo "$(seq -w 26 |sort -R |head -1 |sort -n)"; done) 
 
-# Add Power Ball (6th ball) to 5 powerball numbers
+# Add Power Ball (6th ball) to 5  numbers
 echo $myPBnumbers >> $tempDir/numbers-fold.txt
 
-# Add all Powerball Numbers + PowerBall Number on single line to Current (print) file
-echo $myNumbers+$myPBnumbers >> $tempDir/print.txt
+# Add all Numbers + Power Ball Number on single line to Current (print) file
+echo $myNumbers+$myPBnumbers >> $tempDir/SparkyPB-Numbers.txt
 
 # Copy final power numbers (1 per line)
 cp $tempDir/numbers-fold.txt $tempDir/pb-numbers.txt
@@ -59,15 +72,54 @@ pbNum=$(sed -n 10p < $pbNumFile)
 # ====================================================
 # Now copy correct balls to icon display window ======
 # ====================================================
-sleep 2
-	cp $numbersDir/$Num1.desktop $iconHoldDir
+
+   	cp $numbersDir/$Num1.desktop $iconHoldDir
 	cp $numbersDir/$Num2.desktop $iconHoldDir
 	cp $numbersDir/$Num3.desktop $iconHoldDir
 	cp $numbersDir/$Num4.desktop $iconHoldDir
 	cp $numbersDir/$Num5.desktop $iconHoldDir
 	cp $numbersDir/pb$pbNum.desktop $iconHoldDir
+
+sleep 2
+    /home/yadbash/sparkypb/source/spin-sparkypb.sh 
+# sleep 3
+
+#	cp $iconHoldDir/*.desktop /home/yadbash/sparkypb/icons/display/
 sleep 1
-	cp $iconHoldDir/*.desktop /opt/yadbash/powerball/icons/display/
+cp $iconHoldDir/$Num1.desktop /home/yadbash/sparkypb/icons/display/
+
+/home/yadbash/sparkypb/source/spin-sparkypb.sh 
 sleep 1
+cp $iconHoldDir/$Num2.desktop /home/yadbash/sparkypb/icons/display/
+
+/home/yadbash/sparkypb/source/spin-sparkypb.sh  
+sleep 1
+
+cp $iconHoldDir/$Num3.desktop /home/yadbash/sparkypb/icons/display/
+
+/home/yadbash/sparkypb/source/spin-sparkypb.sh  
+sleep 1
+cp $iconHoldDir/$Num4.desktop /home/yadbash/sparkypb/icons/display/
+
+/home/yadbash/sparkypb/source/spin-sparkypb.sh  
+sleep 1
+cp $iconHoldDir/$Num5.desktop /home/yadbash/sparkypb/icons/display/
+
+/home/yadbash/sparkypb/source/spin-sparkypb.sh  
+sleep 1
+cp $iconHoldDir/pb$pbNum.desktop /home/yadbash/sparkypb/icons/display/
+
+sleep 1
+
+/home/yadbash/sparkypb/source/spin-sparkypb.sh  &
+
+rm /home/yadbash/sparkypb/icons/display/*.desktop 
+
+sleep 2
+
+cp $iconHoldDir/*.desktop /home/yadbash/sparkypb/icons/display/
+
+
+sleep 3
 	rm $iconHoldDir/*.desktop >> null
 

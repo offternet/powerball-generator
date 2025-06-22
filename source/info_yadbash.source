@@ -1,16 +1,23 @@
 # THIS IS A SOURCE FILE for larger information display window
 
-# LOCATION /opt/yadbash/powerball/source/info_yadbash.source
+# LOCATION /home/yadbash/sparkypb/source/info_yadbash.source
 
 fkey=$(($RANDOM * $$))
 
-filename="/opt/yadbash/powerball/list/about-yadbash.list"
-imageDir="/opt/yadbash/powerball/images/"
+filename="/home/yadbash/sparkypb/list/about-yadbash.list"
+imageDir="/home/yadbash/sparkypb/images/"
+
+yadbash_com() {
+
+xdg-open "Https://yadbash.com" 
+
+}
+export -f yadbash_com
 
 yad \
 	--plug="$fkey" \
 	--tabnum=1  \
-	--image="$imageDir/sparky-powerball-banner.png" &
+	--image="$imageDir/sparkypb-banner.png" &
 
 yad \
 	--plug="$fkey" \
@@ -22,20 +29,11 @@ yad \
 	--image="$imageDir/yadbash-logo.jpg" \
 	--filename="$filename"   &
 
-yad \
-	--paned \
-	--key="$fkey" \
-	--undecorated \
-	--on-top \
-	--center \
-	--width=800 \
-	--height=350 \
-	--button="Close":1
+yad --paned --key="$fkey" --undecorated --on-top --center --width=600 --height=600 --button="Yadbash Website":"bash -c yadbash_com" --button="Close":1
 
 	ret=$?
 	[[ $ret -eq 1 ]] && exit
 
 	exit
-
 
 # END 

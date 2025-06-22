@@ -1,6 +1,6 @@
-# Source file for /home/yadbash/powerball/sparkypowerball.sh
+# Source file for /home/yadbash/sparkypb/sparkypb.sh
 
-tempDir="/opt/yadbash/powerball/temp"
+tempDir="/home/yadbash/sparkypb/temp"
 TEXT="Customize your SparkyPB Numbers. \n Adjust number.  Max 65525"
 curKeyNum=$(sed -n 1p < $tempDir/keynumber.txt)
 

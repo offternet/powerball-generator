@@ -1,19 +1,25 @@
 # THIS IS A SOURCE FILE large info display window with 
 # --buttons | Print | Close
 
-# LOCATION /opt/yadbash/powerball/source/display-window-export-save-prnt.source
-printFile="/opt/yadbash/powerball/temp/print.txt"
+# LOCATION /home/yadbash/sparkypb/source/display-window-export-save-prnt.source
+printFile="/home/yadbash/sparkypb/temp/SparkyPB-Numbers.txt"
 
-filename="/opt/yadbash/powerball/temp/print.txt" 
+filename="/home/yadbash/sparkypb/temp/SparkyPB-Numbers.txt" 
 TEXT="Displaying your Current Last SparkyPB Numbers"
 
 clear_current() {
-rm $tempDir/print.txt
-touch $tempDir/print.txt
+rm $tempDir/SparkyPB-Numbers.txt
+touch $tempDir/SparkyPB-Numbers.txt
 bash -c pb_reset
 yad --text="You have cleared current numbers" --undecorated  --center --on-top width=400 height=15  --timeout=2 --no-buttons
 }
 export -f clear_current
+
+open_textFile() {
+xdg-open /home/yadbash/sparkypb/temp/SparkyPB-Numbers.txt
+
+}
+export -f open_textFile
 
 yad \
 	--text-info \
@@ -26,8 +32,12 @@ yad \
 	--width=400 \
 	--height=150 \
 	--button="Clear Current":"bash -c clear_current" \
-	--button=Print:"yad --on-top --filename="$printFile" --print " \
+	--button="Open/Print Numbers":"bash -c open_textFile" \
 	--button="Close":1
+
+
+#	--button=Print:"yad --on-top --filename="$printFile" --print " \
+
 
 
 # END display-window-export-save-prnt.source
