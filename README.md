@@ -1,6 +1,6 @@
 # SparkyPB - Powerball (tm)** Number Generator Version - 2025
 
-<img src="https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png"> <img src="https://github.com/offternet/powerball-generator/blob/master/sparky-pb-300banner.png">
+[![Alt text](https://github.com/offternet/powerball-generator/blob/master/sparkypb-icon.png)
 
 **Updated New Code:** June 22, 2025
 
