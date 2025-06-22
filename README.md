@@ -19,17 +19,10 @@
 7. Execute SparkyPB:
      From /home/yadbash/sparkypb directory: <code>./sparkypb.sh</code>
      From any directory: /home/yadbash/sparkypb/sparkypb.sh
-   
-**Dependencies:**   Requires YAD GUI 10.x+ 
-                    Requires Gtk-3.x environment on a GNU Linux system. 
-                    Sparkypb uses yad --paned option which is not in version: 0.40.0
-                    You will have to compile yad on your system if 10.x is not already installed
-                    Yad Compile instructions are here: https://yadbash.com/pages/view/57/source-install
-    
-**Important !!!  Special Duplicate 2nd copy of yad requied:** 
 
-1. For version 10-14.x: Open terminal: <code>sudo cp /usr/local/bin/yad /usr/local/bin/yad2
-2. For Version 0.40.x: <code>sudo cp /usr/bin/yad /usr/bin/yad2
+**Important -  Special Duplicate 2nd copy of yad requied:** 
+  For version 10-14.x: Open terminal: <code>sudo cp /usr/local/bin/yad /usr/local/bin/yad2</code> 
+  For Version 0.40.x: <code>sudo cp /usr/bin/yad /usr/bin/yad2</code>
 
 **Make these 2 files executable**
 1. cd /home/yadbash/sparkypb/
@@ -40,8 +33,10 @@
 
 Tested on Debian 11, Debian 11, and Debian 12 Bookworm. Should work on all Destkops as long as yad 10.x - 14.x will work.
 
-----------------------
-Screenshots:
+** Powberball is a trademark of the Powerball Corporation and NOT owned by Robert Cooper. 
+** SparkyPB is only for entertainment purposes and will NOT increase your changes of winning a Jackpot but if you do, 1% to Robert would be a kind jesture of your apprecation.
+
+**Screenshots:**
 
 ![Alt text](https://github.com/offternet/SparkyPB-Powerball-Numbers-Generator/blob/master/screenshots/sparkypb01.png)
 ![Alt text](https://github.com/offternet/SparkyPB-Powerball-Numbers-Generator/blob/master/screenshots/sparkypb02.png)
